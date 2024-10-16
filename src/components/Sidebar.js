@@ -4,7 +4,7 @@ import SimpleBar from 'simplebar-react';
 import { useLocation } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faBoxOpen, faChartPie, faCog, faFileAlt, faHandHoldingUsd, faSignOutAlt, faTable, faTimes, faCalendarAlt, faMapPin, faInbox, faRocket, faBriefcase, faCheckCircle, faMoneyBill, faMale, faHome, faPersonBooth } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faBoxOpen, faChartPie, faCog, faFileAlt, faHandHoldingUsd, faSignOutAlt, faTable, faTimes, faCalendarAlt, faMapPin, faInbox, faRocket, faBriefcase, faCheckCircle, faMoneyBill, faMale, faHome, faPersonBooth, faUserPlus, faUserTag, faUserClock } from "@fortawesome/free-solid-svg-icons";
 import { Nav, Badge, Image, Button, Dropdown, Accordion, Navbar } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -105,16 +105,16 @@ export default (props = {}) => {
               <NavItem title="Volt React" link={Routes.Presentation.path} image={ReactHero} /> */}
 
 
-              <NavItem title="Create / Edit Job Posting" link={Routes.CreateOrEditJobPosting.path} icon={faChartPie} />
+              {/*<NavItem title="Create / Edit Job Posting" link={Routes.CreateOrEditJobPosting.path} icon={faChartPie} />
               <NavItem title="Create / Edit PIC" link={Routes.CreateOrEditPic.path} icon={faChartPie} />
-              <NavItem title="Create Transaction" link={Routes.CreateTransaction.path} icon={faChartPie} />
+              <NavItem title="Create Transaction" link={Routes.CreateTransaction.path} icon={faChartPie} />*/}
 
               <NavItem title="Home" link={Routes.DashboardOverview.path} icon={faHome} />
               <NavItem title="Job Posting" link={Routes.JobPosting.path} icon={faBriefcase} />
-              <NavItem title="List Attendance" link={Routes.ListAttendance.path} icon={faMale} />
+              <NavItem title="List Attendance" link={Routes.ListAttendance.path} icon={faUserClock} />
               <NavItem title="List Transaction" link={Routes.ListTransaction.path} icon={faMoneyBill} />
-              <NavItem title="List PIC" link={Routes.ListPic.path} icon={faPersonBooth} />
-              <NavItem title="List Candidate" link={Routes.ListCandidate.path} icon={faPersonBooth} />
+              <NavItem title="List PIC" link={Routes.ListPic.path} icon={faUserTag} />
+              <NavItem title="List Candidate" link={Routes.ListCandidate.path} icon={faUserPlus} />
 
               {/*<NavItem external title="Messages" link="https://demo.themesberg.com/volt-pro-react/#/messages" target="_blank" badgeText="Pro" icon={faInbox} />
               <NavItem title="Transactions" icon={faHandHoldingUsd} link={Routes.Transactions.path} />
